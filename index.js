@@ -8,10 +8,8 @@ const url = require("url")
 //* >>> dependencies in package.json are Important, it store all the node modules info (when you run --npm i-- it look the dependencies and install )
 
 const myServer = http.createServer((req, res) => {
-    const log = `${Date.now()}: ${req.url} New Req Received\n`;
+    const log = `${Date.now()}: ${req.url} ${req.method} New Req Received\n`;
     const myUrl = url.parse(req.url, true);
-
-    console.log(myUrl);
 
     fs.appendFile("log.txt", log, (err, data) => {
         switch (myUrl.pathname) {

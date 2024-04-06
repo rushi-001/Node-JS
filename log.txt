@@ -18,3 +18,9 @@
 1712340203231: /favicon.ico New Req Received
 1712340368983: /about?userName=rushi&id=1 New Req Received
 1712340369029: /favicon.ico New Req Received
+1712426420633: / GET New Req Received
+1712426421103: /favicon.ico GET New Req Received
+1712426427504: / GET New Req Received
+1712426427541: /favicon.ico GET New Req Received
+1712426429167: / GET New Req Received
+1712426429209: /favicon.ico GET New Req Received
