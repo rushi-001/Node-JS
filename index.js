@@ -2,7 +2,6 @@
 // const fs = require("fs")
 // const url = require("url")
 
-
 //* >>> https://www.youtube.com/results?search_query=tic+tac+toe
 //* >>> https--{protocol(hyper text trasphar protocol)}--://--www.youtube.com--{domain}--/results--{path}--?--{query starts}--search_query=tic+tac+toe--{query}
 
@@ -29,22 +28,22 @@
 
 // myServer.listen(8000, () => { console.log("Server Started!") });
 
-//* >> before express framework........ 
+//* >> before express framework........
 
 //* >>> Express is an framework for Node.js like React.js is an framework for JavaScript
 
-//* >> after express framework........ 
+//* >> after express framework........
 
-const express = require("express")
+const express = require("express");
 
-const app = express()
+const app = express();
 
 app.get("/", (req, res) => {
-    return res.send("hello from server");
-})
+  return res.send("hello from server");
+});
 
 app.get("/about", (req, res) => {
-    return res.send(`hello, ${req.query.name}`);
-})
+  return res.send(`hello, ${req.query.name}`);
+});
 
 app.listen(8000, () => console.log("server started...."));
